@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#info {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 300px;
+    opacity: 0; /* Initial opacity for animation */
+    transform: translateY(20px); /* Start slightly lower */
+    animation: fadeIn 1s forwards; /* Apply fade-in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fade in to full opacity */
+        transform: translateY(0); /* Move to original position */
+    }
+}
